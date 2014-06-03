@@ -138,7 +138,7 @@
 				{
 					//send an email
 					$pmproemail = new PMProEmail();					
-					$pmproemail->sendCreditCardExpiringEmail($euser);
+					$pmproemail->sendCreditCardExpiringEmail($euser,$last_order);
 					
 					printf(__("Credit card expiring email sent to %s. ", "pmpro"), $euser->user_email);				
 				}
